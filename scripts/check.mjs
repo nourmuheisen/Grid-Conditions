@@ -1,0 +1,22 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
+const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');const d=JSON.parse(html.match(/<script id="research-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);const code=html.match(/<script>\n([\s\S]*?)<\/script>/)[1];
+const els=new Map(),events={},downloads=[];function el(id){if(!els.has(id))els.set(id,{value:'',innerHTML:'',textContent:'',hidden:false,dataset:{},attrs:{},listeners:{},setAttribute(k,v){this.attrs[k]=v;},addEventListener(t,f){this.listeners[t]=f;},classList:{toggle(){}},focus(){},scrollIntoView(){}});return els.get(id);}
+el('research-data').textContent=JSON.stringify(d);for(const id of ['province','lens','layer'])el(id).value='all';
+const context=vm.createContext({document:{getElementById:el,addEventListener:(t,f)=>events[t]=f,querySelectorAll:()=>[],createElement:()=>({click(){downloads.push(this.download)}})},Blob,URL,setTimeout:f=>f(),console});const run=s=>vm.runInContext(s,context);run(code);
+assert.equal(d.cases.length,12);assert.equal(new Set(d.cases.map(c=>c.region)).size,8);assert.equal(new Set(d.cases.map(c=>c.operator)).size,6);
+assert(el('coverage').textContent.includes('41 SOURCES'));assert(el('directory-list').innerHTML.includes('Microsoft Middenmeer'));
+for(const c of d.cases){run('active='+JSON.stringify(c.id));for(const layer of ['all',...new Set(d.claims.map(c=>c.classification))]){el('layer').value=layer;run('renderCase()');assert(el('case-heading').innerHTML.includes(c.name.replaceAll('&','&amp;')));for(const s of ['firm','flex','assets']){run('path='+JSON.stringify(s)+';renderScenario()');assert(el('scenario').innerHTML.includes('Conditional investigation'));}}}
+for(const province of new Set(d.cases.map(c=>c.region))){el('province').value=province;run('renderDirectory()');assert.equal(run('filteredCases().length'),d.cases.filter(c=>c.region===province).length);}
+el('province').value='all';el('search').value='impossible query';assert.equal(run('filteredCases().length'),0);run('renderDirectory()');assert(el('directory-list').innerHTML.includes('No cases match'));
+el('search').value='BIT';assert.equal(run('filteredCases().length'),1);el('search').value='';
+for(const lens of new Set(d.cases.map(c=>c.lens))){el('lens').value=lens;assert.equal(run('filteredCases().length'),d.cases.filter(c=>c.lens===lens).length);}el('lens').value='all';
+let target={dataset:{pick:'ams11'},checked:true};events.change({target});assert.equal(target.checked,false);assert(el('selection-message').textContent.includes('Three cases'));
+events.change({target:{dataset:{pick:'ede'},checked:false}});events.change({target:{dataset:{pick:'ams11'},checked:true}});assert(el('comparison').innerHTML.includes('Digital Realty AMS11'));
+run("picked.clear();renderComparison()");assert(el('comparison').innerHTML.includes('Select up to three'));
+run("active='eindhoven';path='assets';renderScenario()");el('scenario-notes').listeners.input({target:{value:'A <script>not executable</script>'}});run('renderScenario()');assert(el('scenario').innerHTML.includes('&lt;script&gt;'));run("active='ede';renderScenario();active='eindhoven';renderScenario()");assert(el('scenario').innerHTML.includes('not executable'));
+el('export-notes').listeners.click();el('download-data').listeners.click();assert(downloads.includes('scenario-notes.json'));assert(downloads.includes('evidence.json'));
+run("setTab('scenario')");assert(el('evidence-panel').hidden);assert(!el('scenario-panel').hidden);assert.equal(el('scenario-tab').attrs['aria-selected'],'true');
+el('source-search').value='S26';run('renderSources()');assert(el('sources').innerHTML.includes('Data Center Dynamics'));el('source-search').value='';run('renderSources()');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('__DATA__'));assert(!/<script[^>]+src=/.test(html));
+for(const name of ['research-brief.md','source-register.csv','evidence-table.csv','assumptions-and-gaps.md','selection-register.csv','README.md'])assert(fs.existsSync(new URL('../'+name,import.meta.url)));
+console.log('PASS: 12 cases / 8 provinces / 6 operators; case, layer, path, province, lens and text filtering; comparison selection limit and empty state; escaped session notes and exports; tabs; source search; local document links. DOM-stub runtime check, not rendered-browser QA.');

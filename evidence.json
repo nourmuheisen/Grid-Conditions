@@ -1,0 +1,1994 @@
+{
+  "title": "Grid-positive, under what conditions?",
+  "version": "2.0",
+  "as_of": "2026-10-15",
+  "scope": "National exploratory sample: 12 documented cases across 8 Dutch provinces. Not an exhaustive inventory or representative pipeline.",
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "BCG",
+      "title": "Powering AI Through Grid-Positive Data Centers",
+      "publication_date": "2026-08-18",
+      "date_note": "Publication date",
+      "url": "https://www.bcg.com/publications/2026/powering-ai-through-grid-positive-data-centers",
+      "type": "Published perspective",
+      "supports": "Context: coordinated connection, workload and on-site options; no model or estimates reused.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S02",
+      "publisher": "Dutch Data Center Association",
+      "title": "Datacenter map",
+      "publication_date": null,
+      "date_note": "Undated in retrieved page; access date is not publication date",
+      "url": "https://www.dutchdatacenters.nl/map/",
+      "type": "Industry association",
+      "supports": "Discovery map of DDA facilities; not a verified nationwide project pipeline.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S03",
+      "publisher": "RVO",
+      "title": "Rapportageplicht energie-efficiëntie datacentra",
+      "publication_date": "2026-10-05",
+      "date_note": "Page checked date",
+      "url": "https://www.rvo.nl/onderwerpen/energiebesparingsplicht/eed-auditplicht/rapportageplicht-datacentra",
+      "type": "Government",
+      "supports": "Page review date. Reporting obligation is not evidence of an accessible site-level connection register.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S04",
+      "publisher": "Google",
+      "title": "Eemshaven location",
+      "publication_date": null,
+      "date_note": "Undated in retrieved page; access date is not publication date",
+      "url": "https://www.datacenters.google/locations/eemshaven-netherlands-var/",
+      "type": "Project owner",
+      "supports": "Location, December 2016 opening; Winschoten 2024 milestone; Google Westpoort construction milestone.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S05",
+      "publisher": "Google",
+      "title": "Winschoten opening",
+      "publication_date": "2025-11-18",
+      "date_note": "Publication date",
+      "url": "https://www.googlecloudpresscorner.com/2025-11-18-Google-Opens-Data-Center-in-Winschoten-to-Help-Power-the-AI-Economy-in-The-Netherlands",
+      "type": "Project owner",
+      "supports": "Opening, Oldambt/Groningen, rooftop solar, air cooling, domestic water use and December 2023 groundbreaking.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S06",
+      "publisher": "Google",
+      "title": "Winschoten location",
+      "publication_date": null,
+      "date_note": "Undated in retrieved page; access date is not publication date",
+      "url": "https://www.datacenters.google/locations/winschoten/",
+      "type": "Project owner",
+      "supports": "Oldambt, cooling and 2023 construction milestone.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S07",
+      "publisher": "Google",
+      "title": "Duurzame watervoorziening voor Google's datacenter in Eemshaven",
+      "publication_date": "2021-04-21",
+      "date_note": "Publication date",
+      "url": "https://blog.google/intl/nl-nl/google-nieuws/initiatieven/2021_04_duurzame-watervoorziening-voor-googles/",
+      "type": "Project owner",
+      "supports": "Industrial cooling water from surface water; wastewater reuse described as future investigation.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S08",
+      "publisher": "NorthC",
+      "title": "Groningen data centers",
+      "publication_date": null,
+      "date_note": "Undated in retrieved page; access date is not publication date",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/groningen/",
+      "type": "Project owner",
+      "supports": "Groningen 1 & 2 location, 2.7 MW combined installed electrical capacity, hydrogen backup at Groningen 2.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S09",
+      "publisher": "NorthC",
+      "title": "Emergency power facilities on green hydrogen",
+      "publication_date": null,
+      "date_note": "Undated in retrieved page; access date is not publication date",
+      "url": "https://www.northcdatacenters.com/en/press-releases/northc-installs-europes-first-emergency-power-facilities-that-run-on-green-hydrogen-in-groningen/",
+      "type": "Project owner",
+      "supports": "500 kW module announced for emergency power. Publication date not visible; future tense retained.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S10",
+      "publisher": "Google Cloud",
+      "title": "Supporting power grids with demand response at Google data centers",
+      "publication_date": "2023-10-03",
+      "date_note": "Publication date",
+      "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+      "type": "Operator / country context",
+      "supports": "Dutch participation in winter 2022–23 demand reductions; no named Dutch site or MW commitment.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S11",
+      "publisher": "Enexis",
+      "title": "Update netcapaciteit mei 2025",
+      "publication_date": "2025-05-15",
+      "date_note": "Modified 2026-06-16",
+      "url": "https://www.enexis.nl/nieuws/2025/05/update-netcapaciteit-mei",
+      "type": "Grid operator",
+      "supports": "Consumption constraints vary by Eemshaven/Winschoten block; page last modified 2026-06-16.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S12",
+      "publisher": "Enexis",
+      "title": "Update netcapaciteit juli 2026",
+      "publication_date": "2026-07-16",
+      "date_note": "Publication date",
+      "url": "https://www.enexis.nl/nieuws/2026/07/update-netcapaciteit-juli",
+      "type": "Grid operator",
+      "supports": "Vierverlaten MST Netdeel 1 consumption constraint; facility-to-block connection unverified.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S13",
+      "publisher": "TenneT",
+      "title": "Resultaten herijking onderzoeken — December 2025",
+      "publication_date": "2025-12",
+      "date_note": "Month precision only",
+      "url": "https://magazines.tennet.eu/nieuwsbrief-netcongestie-december2025/resultaten-herijking-onderzoeken-noord-brabant-groningen-drenthe-en-overijssel",
+      "type": "Grid operator",
+      "supports": "Groningen capacity release concerns export, not consumption.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S14",
+      "publisher": "ACM",
+      "title": "Codebesluit operationalisering TDTR",
+      "publication_date": "2026-05-07",
+      "date_note": "Publication date",
+      "url": "https://www.acm.nl/nl/publicaties/codebesluit-operationalisering-tdtr-tijdsduurgebonden-transportrecht",
+      "type": "Regulator",
+      "supports": "TDTR on TenneT network; annual availability does not establish a site's curtailment pattern or eligibility.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S15",
+      "publisher": "Het Hogeland",
+      "title": "Draft planning change: underground 380 kV cable",
+      "publication_date": "2026-09-29",
+      "date_note": "Publication date",
+      "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-457497.html",
+      "type": "Government official notice",
+      "supports": "EOS380 cable to an unnamed expanding Eemshaven data centre; consultation through 2026-11-09, not approval.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S16",
+      "publisher": "Enexis",
+      "title": "Update netcapaciteit september 2026",
+      "publication_date": "2026-09-17",
+      "date_note": "Publication date",
+      "url": "https://www.enexis.nl/nieuws/2026/09/update-netcapaciteit-september",
+      "type": "Grid operator",
+      "supports": "More recent regional update; no site-specific connection determination for the selected facilities.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S17",
+      "publisher": "ACM",
+      "title": "Codebesluit Alternatieve transportrechten",
+      "publication_date": "2024-07-19",
+      "date_note": "Publication date",
+      "url": "https://www.acm.nl/nl/publicaties/codebesluit-alternatieve-transportrechten",
+      "type": "Regulator",
+      "supports": "Distinguishes time-duration rights on TenneT and time-block rights on regional networks.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S18",
+      "publisher": "Gemeente Groningen",
+      "title": "NorthC environmental activity notification",
+      "publication_date": "2026-04-28",
+      "date_note": "Publication date",
+      "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-202087.html",
+      "type": "Government official notice",
+      "supports": "Notification received for combustion installation at Liverpoolweg 10; not approval for grid-service dispatch.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S19",
+      "publisher": "Google",
+      "title": "Construction start: Westpoort",
+      "publication_date": "2024-04-23",
+      "date_note": "Publication date",
+      "url": "https://blog.google/intl/nl-nl/google-nieuws/over-google/google-investeert-600-miljoen-in-een-nieuw-datacenter-in-groningen/",
+      "type": "Project owner",
+      "supports": "Construction announced in Groningen municipality; planned roof solar and air-cooled chillers.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S20",
+      "publisher": "TenneT",
+      "title": "Vierverlaten: cruciale schakel",
+      "publication_date": "2026-05",
+      "date_note": "Month precision only",
+      "url": "https://magazines.tennet.eu/contact-magazine-noord-nederland-mei-2026/vierverlaten-cruciale-schakel-in-het-netwerk-rond-de-stad-groningen",
+      "type": "Grid operator",
+      "supports": "A new Google data centre in Groningen will connect to Vierverlaten; no contracted MW or energisation date.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S21",
+      "publisher": "Samenwerkende Bedrijven Eemsregio",
+      "title": "TenneT start werkzaamheden voor Google-aansluiting",
+      "publication_date": "2024-10-10",
+      "date_note": "Publication date",
+      "url": "https://www.sb-eemsregio.nl/tennet-start-werkzaamheden-voor-google-aansluiting-in-de-eemshaven/",
+      "type": "Secondary: regional business association",
+      "supports": "Reports planned Google 220 kV cable; historical expected start October 2024 and completion mid-2025.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S22",
+      "publisher": "Eemshavenonline",
+      "title": "TenneT creëert verbinding van 220.000 volt",
+      "publication_date": "2024-11-12",
+      "date_note": "Publication date",
+      "url": "https://eemshavenonline.nl/projecten/tennet-creeert-verbinding-van-220-000-volt-tussen-google-en-hoogspanningsstation/",
+      "type": "Secondary: local reporting, cites Groningen Seaports press release",
+      "supports": "Later expected start January 2025 and completion second half 2025; not commissioning confirmation.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web search/open on access date; no guarantee of future availability"
+    },
+    {
+      "id": "S23",
+      "publisher": "Microsoft",
+      "title": "Middenmeer campus development",
+      "publication_date": "2026-02",
+      "date_note": "Latest dated section; month precision",
+      "url": "https://local.microsoft.com/blog/microsoft-bouwt-aan-toekomstbestendige-datacentercampus-in-middenmeer/",
+      "type": "Project owner",
+      "supports": "Expansion announced September 2025; February 2026 landscaping before construction. Latest dated section, not page publication.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S24",
+      "publisher": "Microsoft",
+      "title": "Netherlands community page",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://local.microsoft.com/communities/emea/north-holland/",
+      "type": "Project owner",
+      "supports": "Existing operations in Middenmeer, Hollands Kroon; do not conflate with the expansion.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S25",
+      "publisher": "Digital Realty",
+      "title": "AMS11 facility page",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams11",
+      "type": "Project owner",
+      "supports": "Schiphol-Rijk address, future-tense 2026 operational statement and redundant backup design.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S26",
+      "publisher": "Data Center Dynamics",
+      "title": "Digital Realty opens 27MW data center campus",
+      "publication_date": "2025-11-20",
+      "date_note": "Publication/report date",
+      "url": "https://www.datacenterdynamics.com/en/news/digital-realty-opens-new-27mw-data-center-campus-in-amsterdam-the-netherlands/",
+      "type": "Secondary: industry reporting",
+      "supports": "Reports first two phases open and 27 MW IT capacity for the development; conflicts in timing/boundary with owner page retained.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S27",
+      "publisher": "NorthC",
+      "title": "Rotterdam Zestienhoven 1 & 2",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/rotterdam-zestienhoven/",
+      "type": "Project owner",
+      "supports": "Location; combined 7.3 MW installed electrical capacity; prospective heat supply.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S28",
+      "publisher": "NorthC",
+      "title": "Eindhoven 2 – High Tech Gateway",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/eindhoven-2/",
+      "type": "Project owner",
+      "supports": "Location; 4.5 MW installed electrical capacity; hybrid hydrogen/gas emergency generation; closed-loop cooling without drinking water.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S29",
+      "publisher": "NorthC",
+      "title": "Eindhoven 2 factsheet",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.northcdatacenters.com/en/wp-content/uploads/sites/2/2024/02/Eindhoven_2_Data_Center_Factsheet_NorthC_EN.pdf",
+      "type": "Project owner factsheet",
+      "supports": "Page 3: grid connection specified as 1 x 10 kV (N+1), hydrogen hybrid backup. URL date not treated as publication date.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S30",
+      "publisher": "NorthC",
+      "title": "Almere",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/almere/",
+      "type": "Project owner",
+      "supports": "Almere location and 11 MW installed electrical capacity.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S31",
+      "publisher": "NorthC",
+      "title": "Nieuwegein – Utrecht",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/nieuwegein/",
+      "type": "Project owner",
+      "supports": "Nieuwegein location and 2.5 MW installed electrical capacity.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S32",
+      "publisher": "BIT",
+      "title": "Datacenters",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.bit.nl/colocatie/datacenters/",
+      "type": "Project owner",
+      "supports": "Three Ede datacentres distinguished; BIT-1 separate from BIT-2.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S33",
+      "publisher": "BIT",
+      "title": "SLA addendum: colocation BIT-1",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.bit.nl/app/uploads/2025/06/NL-2024-12-17-SLA-Colocatie-BIT-1.pdf",
+      "type": "Operator contractual document",
+      "supports": "Dual power feeds, UPS and generator backup; monthly power availability commitment and maintenance tests. Date in filename not treated as verified publication date.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S34",
+      "publisher": "Previder",
+      "title": "Rackspace and datacentres",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://previder.nl/diensten/rackspace",
+      "type": "Project owner",
+      "supports": "PDC1/PDC2 in Hengelo, redundancy and rackspace service; not a workload-shifting commitment.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S35",
+      "publisher": "Liander",
+      "title": "High-voltage network capacity by region",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.liander.nl/grootzakelijk/capaciteit-op-het-net/capaciteit-per-regio/tennet",
+      "type": "Grid operator",
+      "supports": "Noord-Holland regional import constraints; not a site connection contract.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S36",
+      "publisher": "Liander",
+      "title": "Flevopolder, Utrecht and Gelderland reinforcement delays",
+      "publication_date": "2025-06-12",
+      "date_note": "Publication/report date",
+      "url": "https://www.liander.nl/over-ons/nieuws/2025/uitbreidingsprojecten-hoogspanningsnet-flevopolder-utrecht-en-gelderland-duren-langer-dan-gepland",
+      "type": "Grid operator",
+      "supports": "Regional reinforcement delays affect new or heavier connections; no named facility attribution.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S37",
+      "publisher": "Liander",
+      "title": "Schiphol-Rijk / Rijsenhout network expansion",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.liander.nl/regio/noord-holland/rozenburg-zuid/nurijnland",
+      "type": "Grid operator",
+      "supports": "Regional construction programme; completion does not automatically release transport capacity.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S38",
+      "publisher": "Stedin",
+      "title": "Rotterdam port consumption congestion",
+      "publication_date": null,
+      "date_note": "Undated in retrieved document",
+      "url": "https://www.stedin.net/zakelijk/energietransitie/beschikbare-netcapaciteit/congestie-en-congestiemanagement/rotterdams-havengebied",
+      "type": "Grid operator",
+      "supports": "Port and specified surrounding districts; not evidence that Zestienhoven shares the constraint.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S39",
+      "publisher": "Enexis",
+      "title": "Hengelo Bolderhoek MS00 revised findings",
+      "publication_date": "2026-09-17",
+      "date_note": "Publication/report date",
+      "url": "https://www.enexis.nl/zakelijk/netcapaciteit/congestie/congestiemanagement/onderzoeken/overijssel/hengelo-bolderhoek-blok-ms00-ea",
+      "type": "Grid operator",
+      "supports": "Revised report summary: regional consumption constraints persist; revised end-2028 local works expectation versus earlier 2027 text. No link to PDC2 established.",
+      "access_date": "2026-10-15",
+      "link_check": "Successfully retrieved via web open on 2026-10-15; future availability not guaranteed"
+    },
+    {
+      "id": "S40",
+      "publisher": "Equinix",
+      "title": "Equinix AM8 facility",
+      "publication_date": null,
+      "date_note": "Undated discovery page",
+      "url": "https://www.equinix.com/data-centers/europe-colocation/netherlands-colocation/amsterdam-data-centers/am8",
+      "type": "Project owner; discovery only",
+      "supports": "Discovery only: real Amsterdam location considered but not selected for this bounded sample.",
+      "access_date": "2026-10-15",
+      "link_check": "Retrieved by web search on 2026-10-15; discovery evidence only"
+    },
+    {
+      "id": "S41",
+      "publisher": "NorthC",
+      "title": "NorthC Eindhoven 1",
+      "publication_date": null,
+      "date_note": "Undated discovery page",
+      "url": "https://www.northcdatacenters.com/en/northc-datacenters/eindhoven/",
+      "type": "Project owner; discovery only",
+      "supports": "Discovery only: Eindhoven 1 considered; Eindhoven 2 selected for more explicit hybrid-backup evidence.",
+      "access_date": "2026-10-15",
+      "link_check": "Retrieved by web search on 2026-10-15; discovery evidence only"
+    }
+  ],
+  "cases": [
+    {
+      "id": "eemshaven",
+      "name": "Google Eemshaven",
+      "municipality": "Het Hogeland",
+      "region": "Groningen",
+      "geography_note": "Eemshaven from S04; Het Hogeland municipality inferred from locality and S15 municipal context, not a cadastral match.",
+      "source_ids": [
+        "S04",
+        "S15"
+      ],
+      "status": "Opened December 2016 (owner-reported)",
+      "latest_dated_site_source": "2024-11-12",
+      "latest_source_note": "Latest dated site-specific item is secondary (S22); owner location page S04 undated. S15 is unattributed local context.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Test whether a proven operator capability can become a site-specific commitment.",
+      "next": "Verify the serving node and contractual headroom, then obtain a time-stamped workload-reduction profile.",
+      "stop": "Do not recommend a flexible connection without the site's import rights and tolerable interruption envelope.",
+      "scenario": "Workload shifting is a hypothesis informed by operator-level evidence, not a verified site capability.",
+      "unit_of_analysis": "Location / campus",
+      "operator": "Google",
+      "code": "NL-01",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "winschoten",
+      "name": "Google Winschoten",
+      "municipality": "Oldambt",
+      "region": "Groningen",
+      "geography_note": "S05/S06 identify municipality and region.",
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "status": "Opening announced 18 November 2025",
+      "latest_dated_site_source": "2025-11-18",
+      "latest_source_note": "S06 is undated; construction milestone discrepancy is retained.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Separate documented cooling and solar design from unproven electrical flexibility.",
+      "next": "Obtain the connection agreement, solar output profile and workload scheduling constraints.",
+      "stop": "Do not treat solar panels or air cooling as evidence of firm capacity during a constrained hour.",
+      "scenario": "Test flexible demand plus controllable supply; solar contribution during the event remains unknown.",
+      "unit_of_analysis": "Location / campus",
+      "operator": "Google",
+      "code": "NL-02",
+      "lens": "Cooling & local context"
+    },
+    {
+      "id": "northc",
+      "name": "NorthC Groningen 1 & 2",
+      "municipality": "Groningen",
+      "region": "Groningen",
+      "geography_note": "S08 lists the Groningen address; campus aggregate retained.",
+      "source_ids": [
+        "S08",
+        "S18"
+      ],
+      "status": "Operating locations described by current owner listing",
+      "latest_dated_site_source": "2026-04-28",
+      "latest_source_note": "S18 dates an activity notification, not commissioning. Owner capacity/technology pages remain undated.",
+      "capacity_mw": 2.7,
+      "capacity_basis": "Installed electrical capacity, combined campus",
+      "capacity_source_ids": [
+        "S08"
+      ],
+      "angle": "Investigate whether emergency hydrogen equipment could support an agreed grid service.",
+      "next": "Check operating permits, usable hydrogen inventory, reserve policy and customer service obligations.",
+      "stop": "Do not count emergency reserves as routinely dispatchable generation without permission and availability evidence.",
+      "scenario": "Use of backup for routine congestion events is an explicit assumption requiring validation.",
+      "unit_of_analysis": "Two-location aggregate",
+      "operator": "NorthC",
+      "code": "NL-03",
+      "lens": "On-site assets"
+    },
+    {
+      "id": "westpoort",
+      "name": "Google Westpoort",
+      "municipality": "Groningen",
+      "region": "Groningen",
+      "geography_note": "S19 identifies Westpoort, municipality Groningen. Distinct from NorthC at the same business park.",
+      "source_ids": [
+        "S19",
+        "S20"
+      ],
+      "status": "Construction announced 2024; planned grid connection discussed May 2026",
+      "latest_dated_site_source": "2026-05",
+      "latest_source_note": "Month precision; opening / commissioning not established in this review.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Examine whether operational flexibility could change a documented grid-delivery dependency.",
+      "next": "Confirm the Westpoort–Vierverlaten project match, delivery milestones and whether a staged or flexible offer is relevant.",
+      "stop": "Do not assume that a planned connection is delayed, unavailable or eligible for accelerated access.",
+      "scenario": "A flexible connection is a comparison to investigate, not an option known to have been offered.",
+      "unit_of_analysis": "Location / campus",
+      "operator": "Google",
+      "code": "NL-04",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "middenmeer",
+      "name": "Microsoft Middenmeer",
+      "municipality": "Hollands Kroon",
+      "region": "Noord-Holland",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "status": "Existing campus plus announced expansion; February 2026 landscaping update",
+      "latest_dated_site_source": "2026-02",
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Separate expansion requirements from existing operations.",
+      "next": "Obtain expansion-specific grid, permitting and construction milestones.",
+      "stop": "Do not apply existing-campus access or cooling characteristics to new phases.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Existing campus and separately identified expansion",
+      "operator": "Microsoft",
+      "code": "NL-05",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "ams11",
+      "name": "Digital Realty AMS11",
+      "municipality": "Haarlemmermeer",
+      "region": "Noord-Holland",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S25",
+        "S26"
+      ],
+      "status": "Phased opening reported November 2025; owner page still says operational in 2026",
+      "latest_dated_site_source": "2025-11-20",
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Resolve phase boundaries before comparing delivery options.",
+      "next": "Reconcile operational phases, IT capacity, grid rights and remaining buildout.",
+      "stop": "Do not label the entire reported 27 MW as energised or available.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Phased facility",
+      "operator": "Digital Realty",
+      "code": "NL-06",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "rotterdam",
+      "name": "NorthC Rotterdam Zestienhoven 1 & 2",
+      "municipality": "Rotterdam",
+      "region": "Zuid-Holland",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S27"
+      ],
+      "status": "Operating locations described by owner",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": 7.3,
+      "capacity_basis": "Installed electrical capacity, combined locations",
+      "capacity_source_ids": [
+        "S27"
+      ],
+      "angle": "Explore the relationship between proposed heat supply and electricity flexibility.",
+      "next": "Obtain actual heat obligations, import rights and controllable electrical demand.",
+      "stop": "Heat recovery is not evidence of reduced peak grid import.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Two-location aggregate",
+      "operator": "NorthC",
+      "code": "NL-07",
+      "lens": "Cooling & local context"
+    },
+    {
+      "id": "eindhoven",
+      "name": "NorthC Eindhoven 2",
+      "municipality": "Eindhoven",
+      "region": "Noord-Brabant",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ],
+      "status": "Operating location described by owner",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": 4.5,
+      "capacity_basis": "Installed electrical capacity",
+      "capacity_source_ids": [
+        "S28"
+      ],
+      "angle": "Test the dispatchability of hybrid emergency generation.",
+      "next": "Verify fuel mode, dispatch permission, reserve margin and customer obligations.",
+      "stop": "Hydrogen-capable is not proof of hydrogen use or routine grid-service operation.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Single facility",
+      "operator": "NorthC",
+      "code": "NL-08",
+      "lens": "On-site assets"
+    },
+    {
+      "id": "almere",
+      "name": "NorthC Almere",
+      "municipality": "Almere",
+      "region": "Flevoland",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S30"
+      ],
+      "status": "Operating location described by owner",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": 11,
+      "capacity_basis": "Installed electrical capacity",
+      "capacity_source_ids": [
+        "S30"
+      ],
+      "angle": "Investigate growth options without treating regional constraints as site limits.",
+      "next": "Obtain the current connection agreement and incremental demand request.",
+      "stop": "The published 11 MW specification is not spare grid capacity.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Single facility",
+      "operator": "NorthC",
+      "code": "NL-09",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "nieuwegein",
+      "name": "NorthC Nieuwegein",
+      "municipality": "Nieuwegein",
+      "region": "Utrecht",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S31"
+      ],
+      "status": "Operating location described by owner",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": 2.5,
+      "capacity_basis": "Installed electrical capacity",
+      "capacity_source_ids": [
+        "S31"
+      ],
+      "angle": "Determine which demand changes would require a new grid agreement.",
+      "next": "Separate existing contracted load from future expansion and identify relevant network works.",
+      "stop": "Regional reinforcement dates do not establish this site’s waiting time.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Single facility",
+      "operator": "NorthC",
+      "code": "NL-10",
+      "lens": "Connection & delivery"
+    },
+    {
+      "id": "ede",
+      "name": "BIT-1 Ede",
+      "municipality": "Ede",
+      "region": "Gelderland",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S32",
+        "S33"
+      ],
+      "status": "Operating location with published service terms",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Use service obligations to frame a realistic flexibility conversation.",
+      "next": "Identify customer-approved workloads and preserve the power-availability commitment.",
+      "stop": "Resilient power supply does not mean customers permit workload curtailment.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "BIT-1 only, not BIT-2 campus",
+      "operator": "BIT",
+      "code": "NL-11",
+      "lens": "Workload & service terms"
+    },
+    {
+      "id": "hengelo",
+      "name": "Previder PDC2",
+      "municipality": "Hengelo",
+      "region": "Overijssel",
+      "geography_note": "Municipality/locality identified by owner source; province is administrative context, not a grid-service boundary.",
+      "source_ids": [
+        "S34"
+      ],
+      "status": "Operating location described by owner",
+      "latest_dated_site_source": null,
+      "latest_source_note": "Latest dated site evidence in this reviewed set; undated pages retain unknown publication dates.",
+      "capacity_mw": null,
+      "capacity_basis": "Not established",
+      "capacity_source_ids": [],
+      "angle": "Test who controls demand in a colocation environment.",
+      "next": "Identify tenant workload ownership, import rights and approved operating envelopes.",
+      "stop": "A fibre link between sites does not establish shiftable compute.",
+      "scenario": "Any flexible grid access, shiftable workload or routine dispatch remains a scenario until site-specific terms are established.",
+      "unit_of_analysis": "Single facility",
+      "operator": "Previder",
+      "code": "NL-12",
+      "lens": "Workload & service terms"
+    }
+  ],
+  "claims": [
+    {
+      "id": "E01",
+      "case_id": "eemshaven",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Google records the Eemshaven site's opening in December 2016.",
+      "source_ids": [
+        "S04"
+      ],
+      "confidence": "High: owner confirms milestone",
+      "limitation": "Operating status is owner-reported; current utilisation and expansion schedule not verified.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E02",
+      "case_id": "eemshaven",
+      "dimension": "Water and local context",
+      "classification": "Verified source statement",
+      "text": "Google describes industrial cooling water sourced from surface water.",
+      "source_ids": [
+        "S07"
+      ],
+      "confidence": "Medium: dated owner disclosure",
+      "limitation": "No current abstraction volume, drought entitlement or site water limit established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E03",
+      "case_id": "eemshaven",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Enexis reports consumption constraints at Eemshaven-Midden MS10 / MST Netdeel 4 and Eemshaven-Oost MS20 / MS30.",
+      "source_ids": [
+        "S11"
+      ],
+      "confidence": "High for named grid blocks",
+      "limitation": "No proof that Google's connection uses these blocks; not a current connection offer.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E04",
+      "case_id": "eemshaven",
+      "dimension": "Delivery",
+      "classification": "Regional context",
+      "text": "A September 2026 notice proposes an EOS380 cable to an unnamed expanding Eemshaven data centre.",
+      "source_ids": [
+        "S15"
+      ],
+      "confidence": "High for notice; identity unresolved",
+      "limitation": "Do not attribute this project to Google. Draft consultation is not an approved or energised cable.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E05",
+      "case_id": "eemshaven",
+      "dimension": "Flexibility potential",
+      "classification": "Operator / country context",
+      "text": "Google reports Dutch demand reductions during winter 2022–23; participating sites and flexible MW are not specified.",
+      "source_ids": [
+        "S10"
+      ],
+      "confidence": "Medium: owner reports country activity",
+      "limitation": "Cannot assign participation or repeatable curtailment capability to Eemshaven.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E06",
+      "case_id": "eemshaven",
+      "dimension": "On-site options",
+      "classification": "Unknown",
+      "text": "No usable site-specific generation or storage operating envelope established in this review.",
+      "source_ids": [
+        "S04",
+        "S07"
+      ],
+      "confidence": "Not established",
+      "limitation": "Absence from reviewed sources is not evidence that assets are absent.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W01",
+      "case_id": "winschoten",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Google announced Winschoten's opening on 18 November 2025, in Oldambt, Groningen.",
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "confidence": "High: owner opening announcement",
+      "limitation": "Opening does not disclose connection contract, utilisation or next expansion.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W02",
+      "case_id": "winschoten",
+      "dimension": "Water and local context",
+      "classification": "Verified source statement",
+      "text": "Google says air cooling limits on-site water use to domestic use.",
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "confidence": "Medium: owner design disclosure",
+      "limitation": "No measured consumption or peak-temperature performance independently verified.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W03",
+      "case_id": "winschoten",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "Google reports rooftop solar at Winschoten.",
+      "source_ids": [
+        "S05"
+      ],
+      "confidence": "High for owner disclosure; capability unknown",
+      "limitation": "No verified solar MW, hourly output, storage capacity or dispatch rights.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W04",
+      "case_id": "winschoten",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Enexis distinguishes limited consumption headroom at Winschoten MS10/MS20 from constrained MST Netdelen 3 and 5.",
+      "source_ids": [
+        "S11"
+      ],
+      "confidence": "High for named grid blocks",
+      "limitation": "The site's serving block and transport rights are unknown; station name is insufficient.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W05",
+      "case_id": "winschoten",
+      "dimension": "Flexibility potential",
+      "classification": "Operator / country context",
+      "text": "Google's Dutch demand-response example predates Winschoten's announced opening.",
+      "source_ids": [
+        "S10",
+        "S05"
+      ],
+      "confidence": "High for chronology; site capability unknown",
+      "limitation": "The pilot cannot establish Winschoten participation or shiftable capacity.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "W06",
+      "case_id": "winschoten",
+      "dimension": "Delivery",
+      "classification": "Source discrepancy",
+      "text": "Google's Eemshaven page assigns Winschoten groundbreaking to 2024; Winschoten's page and opening release say December 2023.",
+      "source_ids": [
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "confidence": "Unresolved milestone discrepancy",
+      "limitation": "May refer to different milestones. Preserve both; do not use construction duration in calculations.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N01",
+      "case_id": "northc",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "NorthC lists Groningen 1 & 2 at Liverpoolweg 10, Groningen.",
+      "source_ids": [
+        "S08"
+      ],
+      "confidence": "High: owner location listing",
+      "limitation": "Current listing supports an operating-location screen; no new connection or expansion date established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N02",
+      "case_id": "northc",
+      "dimension": "Capacity",
+      "classification": "Verified source statement",
+      "text": "NorthC lists 2.7 MW of installed electrical capacity for Groningen 1 & 2 combined.",
+      "source_ids": [
+        "S08"
+      ],
+      "confidence": "High for published specification",
+      "limitation": "Not IT load, measured demand, spare capacity, or a verified grid contract. No site-2 allocation.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N03",
+      "case_id": "northc",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "NorthC's current listing identifies hydrogen backup at Groningen 2; an undated announcement specifies a planned 500 kW module.",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "confidence": "Medium: installed technology supported; module rating historical",
+      "limitation": "Current dispatchable rating, fuel reserve and routine-operation permissions not established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N04",
+      "case_id": "northc",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Enexis reports a consumption constraint at Vierverlaten MST Netdeel 1 in July 2026.",
+      "source_ids": [
+        "S12"
+      ],
+      "confidence": "High for named grid block",
+      "limitation": "No evidence linking the NorthC campus to that block; proximity is not network topology.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N05",
+      "case_id": "northc",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload commitment found in reviewed NorthC disclosures.",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "confidence": "Not established",
+      "limitation": "Customer consent, service obligations, workload ownership and recovery windows unknown.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N06",
+      "case_id": "northc",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No sufficiently specific cooling-water constraint established from the reviewed NorthC sources.",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "confidence": "Not established",
+      "limitation": "Do not infer water risk or absence of risk from regional location.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "C01",
+      "case_id": "all",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "TenneT's December 2025 Groningen announcement concerns export capacity, including Eemshaven-Midden and Groningen-Oost (Winschoten).",
+      "source_ids": [
+        "S13"
+      ],
+      "confidence": "High: direction explicit",
+      "limitation": "Not evidence of additional import capacity for any case.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "C02",
+      "case_id": "all",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "ACM distinguishes alternative transport products by network type; TDTR is described for TenneT's network.",
+      "source_ids": [
+        "S14",
+        "S17"
+      ],
+      "confidence": "High for published regulatory description",
+      "limitation": "Does not establish eligibility, an offer, connection timing or curtailment duration at any selected site.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "C03",
+      "case_id": "all",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Enexis's September 2026 update reports further constraints in parts of Groningen.",
+      "source_ids": [
+        "S16"
+      ],
+      "confidence": "High for dated regional update",
+      "limitation": "Retain source vintages; no current grid colour or connection status assigned to a facility.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "N07",
+      "case_id": "northc",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Groningen published receipt of a NorthC combustion-installation notification at Liverpoolweg 10 in April 2026.",
+      "source_ids": [
+        "S18"
+      ],
+      "confidence": "High: official notice",
+      "limitation": "Receipt of notification does not establish equipment identity or authorise routine hydrogen grid-service dispatch.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "P01",
+      "case_id": "westpoort",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Google announced construction at Westpoort, Groningen municipality, in April 2024.",
+      "source_ids": [
+        "S19"
+      ],
+      "confidence": "High: dated owner announcement",
+      "limitation": "No opening date or current construction completion established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "P02",
+      "case_id": "westpoort",
+      "dimension": "Grid evidence",
+      "classification": "Verified source statement",
+      "text": "TenneT's May 2026 account says a new Google data centre in Groningen will connect to Vierverlaten.",
+      "source_ids": [
+        "S20",
+        "S19"
+      ],
+      "confidence": "Medium: project match inferred from owner/location",
+      "limitation": "Westpoort mapping is a cross-source inference; no contract, feeder, MW or energisation date. Not NorthC's connection.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "P03",
+      "case_id": "westpoort",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "Google's construction announcement includes planned rooftop solar.",
+      "source_ids": [
+        "S19"
+      ],
+      "confidence": "Medium: announced design",
+      "limitation": "Installation, capacity and constrained-hour output not established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "P04",
+      "case_id": "westpoort",
+      "dimension": "Water and local context",
+      "classification": "Verified source statement",
+      "text": "Google announced air-cooled chillers intended to avoid water use for server cooling.",
+      "source_ids": [
+        "S19"
+      ],
+      "confidence": "Medium: announced design",
+      "limitation": "Not measured water performance or proof of zero site water use.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "P05",
+      "case_id": "westpoort",
+      "dimension": "Flexibility potential",
+      "classification": "Operator / country context",
+      "text": "Google's Dutch demand-response example is operator-level precedent only.",
+      "source_ids": [
+        "S10"
+      ],
+      "confidence": "Medium for precedent; site capability unknown",
+      "limitation": "No Westpoort workload-reduction commitment identified.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E07",
+      "case_id": "eemshaven",
+      "dimension": "Grid evidence",
+      "classification": "Secondary reporting",
+      "text": "Two local reports describe a planned 220 kV connection for Google's Eemshaven expansion.",
+      "source_ids": [
+        "S21",
+        "S22"
+      ],
+      "confidence": "Medium: secondary reporting",
+      "limitation": "Commissioning and contract unverified. Do not conflate this with S15's 380 kV proposal.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "E08",
+      "case_id": "eemshaven",
+      "dimension": "Delivery",
+      "classification": "Source discrepancy",
+      "text": "October 2024 reporting expected cable works to finish mid-2025; November reporting shifted expected completion to the second half of 2025.",
+      "source_ids": [
+        "S21",
+        "S22"
+      ],
+      "confidence": "Medium: dated expectations",
+      "limitation": "Likely a schedule revision, not evidence of completion. Preserve both vintages.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "M01",
+      "case_id": "middenmeer",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Microsoft describes an existing Middenmeer operation and a separately announced campus expansion.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "February 2026 landscaping update is not confirmation of construction completion.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "M02",
+      "case_id": "middenmeer",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Liander describes import-capacity constraints in Noord-Holland.",
+      "source_ids": [
+        "S35"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No allocation to Microsoft’s existing campus or expansion is established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "D01",
+      "case_id": "ams11",
+      "dimension": "Delivery",
+      "classification": "Source discrepancy",
+      "text": "DCD reports an initial phased opening in November 2025; the undated owner page says operational in 2026.",
+      "source_ids": [
+        "S25",
+        "S26"
+      ],
+      "confidence": "Unresolved phase/timing discrepancy",
+      "limitation": "May reflect different phases or stale copy. Keep both and verify current phase status.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "D02",
+      "case_id": "ams11",
+      "dimension": "Capacity",
+      "classification": "Secondary reporting",
+      "text": "DCD reports 27 MW of IT capacity for AMS11, with the first two phases operational.",
+      "source_ids": [
+        "S26"
+      ],
+      "confidence": "Medium: industry reporting",
+      "limitation": "Not total electrical demand or proof that all 27 MW was energised. Not entered as a comparable electrical-capacity value.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "D03",
+      "case_id": "ams11",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Liander describes reinforcement around Schiphol-Rijk and warns that completion does not automatically free capacity.",
+      "source_ids": [
+        "S37"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "The programme is not an AMS11 connection offer.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "D04",
+      "case_id": "ams11",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "Digital Realty describes redundant backup power at AMS11.",
+      "source_ids": [
+        "S25"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No routine dispatch permission, power rating or usable storage duration established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "D05",
+      "case_id": "ams11",
+      "dimension": "Water and local context",
+      "classification": "Secondary reporting",
+      "text": "DCD describes direct liquid cooling alongside air-based cooling at AMS11.",
+      "source_ids": [
+        "S26"
+      ],
+      "confidence": "Medium: industry reporting",
+      "limitation": "Liquid cooling does not establish site water consumption or abstraction limits.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "R01",
+      "case_id": "rotterdam",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "NorthC lists two Zestienhoven locations in Rotterdam.",
+      "source_ids": [
+        "S27"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Owner page is undated; no new expansion or connection milestone established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "R02",
+      "case_id": "rotterdam",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Stedin describes consumption congestion in the Rotterdam port and specified surrounding districts.",
+      "source_ids": [
+        "S38"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No mapping from Zestienhoven to those areas or serving nodes. Do not apply port congestion to this site.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "R03",
+      "case_id": "rotterdam",
+      "dimension": "Water and local context",
+      "classification": "Verified source statement",
+      "text": "NorthC describes future residual-heat supply to Schiebroek.",
+      "source_ids": [
+        "S27"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Heat delivery, customer commitments and water-use limits have not been verified; no electricity benefit inferred.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "I01",
+      "case_id": "eindhoven",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "NorthC lists Eindhoven 2 at De Schakel 35.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Undated specification; commissioning date and new-build schedule not established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "I02",
+      "case_id": "eindhoven",
+      "dimension": "Grid evidence",
+      "classification": "Verified source statement",
+      "text": "The owner factsheet specifies a 1 x 10 kV (N+1) grid connection.",
+      "source_ids": [
+        "S29"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Voltage and redundancy are not contracted MW, headroom or a flexible-access offer.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "I03",
+      "case_id": "eindhoven",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "NorthC describes emergency generators capable of using hydrogen and gas.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Actual fuel use, continuous output, reserve requirements and routine dispatch rights unknown.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "I04",
+      "case_id": "eindhoven",
+      "dimension": "Water and local context",
+      "classification": "Verified source statement",
+      "text": "NorthC describes closed-loop cooling without drinking-water use.",
+      "source_ids": [
+        "S28"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No independently verified water balance or evidence of zero total water use.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "A01",
+      "case_id": "almere",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "NorthC lists its Almere facility at Rondebeltweg 62.",
+      "source_ids": [
+        "S30"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Owner listing is undated; present utilisation and future delivery milestones unknown.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "A02",
+      "case_id": "almere",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Liander reports delayed regional reinforcement affecting new or heavier connections in the Flevopolder.",
+      "source_ids": [
+        "S36"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Not a site contract, and not evidence that existing Almere operations lack power.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "U01",
+      "case_id": "nieuwegein",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "NorthC lists its Nieuwegein facility at Frieslandhaven 6.",
+      "source_ids": [
+        "S31"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Owner listing is undated; no new connection request verified.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "U02",
+      "case_id": "nieuwegein",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Liander reports reinforcement delays affecting Utrecht and neighbouring network regions.",
+      "source_ids": [
+        "S36"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No Nieuwegein facility-to-node mapping or individual waiting time established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "B01",
+      "case_id": "ede",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "BIT identifies BIT-1 as a separate Ede location from BIT-2.",
+      "source_ids": [
+        "S32"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Do not pool BIT-2 assets or capacities into BIT-1.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "B02",
+      "case_id": "ede",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Liander reports delayed reinforcement affecting new or heavier connections in Gelderland.",
+      "source_ids": [
+        "S36"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No site-specific import contract or queue position established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "B03",
+      "case_id": "ede",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "BIT-1 service terms describe UPS and generator-backed power feeds.",
+      "source_ids": [
+        "S33"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Testing and resilience provisions do not authorise routine congestion services.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "B04",
+      "case_id": "ede",
+      "dimension": "Flexibility potential",
+      "classification": "Verified source statement",
+      "text": "BIT-1’s service terms specify a monthly power-availability commitment.",
+      "source_ids": [
+        "S33"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "This constrains the investigation; it does not disclose shiftable IT load or tenant consent.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "H01",
+      "case_id": "hengelo",
+      "dimension": "Delivery",
+      "classification": "Verified source statement",
+      "text": "Previder identifies PDC2 in Hengelo, separately from PDC1.",
+      "source_ids": [
+        "S34"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Current owner service description; individual construction timeline not established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "H02",
+      "case_id": "hengelo",
+      "dimension": "Grid evidence",
+      "classification": "Regional context",
+      "text": "Enexis’s revised Bolderhoek MS00 summary reports persistent consumption constraints.",
+      "source_ids": [
+        "S39"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "PDC2 connection to this block is unverified; city proximity is insufficient.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "H03",
+      "case_id": "hengelo",
+      "dimension": "On-site options",
+      "classification": "Verified source statement",
+      "text": "Previder describes redundant power and cooling for PDC1/PDC2.",
+      "source_ids": [
+        "S34"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "No PDC2 dispatchable-generation or usable battery specification established.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "H04",
+      "case_id": "hengelo",
+      "dimension": "Delivery",
+      "classification": "Source discrepancy",
+      "text": "Bolderhoek’s page retains an earlier 2027 works expectation and gives end-2028 in its revised findings.",
+      "source_ids": [
+        "S39"
+      ],
+      "confidence": "High for source chronology; regional only",
+      "limitation": "The newer section is identified as revised; neither is a PDC2 connection date.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "MID55",
+      "case_id": "middenmeer",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "MID56",
+      "case_id": "middenmeer",
+      "dimension": "On-site options",
+      "classification": "Unknown",
+      "text": "No usable site-specific generation/storage operating envelope established in the reviewed disclosures.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "MID57",
+      "case_id": "middenmeer",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No location-specific water-use volume or constraint established in the reviewed disclosures.",
+      "source_ids": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "AMS58",
+      "case_id": "ams11",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S25",
+        "S26"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ROT59",
+      "case_id": "rotterdam",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S27"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ROT60",
+      "case_id": "rotterdam",
+      "dimension": "On-site options",
+      "classification": "Unknown",
+      "text": "No usable site-specific generation/storage operating envelope established in the reviewed disclosures.",
+      "source_ids": [
+        "S27"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ROTCAP",
+      "case_id": "rotterdam",
+      "dimension": "Capacity",
+      "classification": "Verified source statement",
+      "text": "NorthC lists 7.3 MW installed electrical capacity for this case.",
+      "source_ids": [
+        "S27"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Published electrical specification; not IT capacity, measured load, spare import capacity or a contract.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "EIN62",
+      "case_id": "eindhoven",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "EINCAP",
+      "case_id": "eindhoven",
+      "dimension": "Capacity",
+      "classification": "Verified source statement",
+      "text": "NorthC lists 4.5 MW installed electrical capacity for this case.",
+      "source_ids": [
+        "S28"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Published electrical specification; not IT capacity, measured load, spare import capacity or a contract.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ALM64",
+      "case_id": "almere",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S30"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ALM65",
+      "case_id": "almere",
+      "dimension": "On-site options",
+      "classification": "Unknown",
+      "text": "No usable site-specific generation/storage operating envelope established in the reviewed disclosures.",
+      "source_ids": [
+        "S30"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ALM66",
+      "case_id": "almere",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No location-specific water-use volume or constraint established in the reviewed disclosures.",
+      "source_ids": [
+        "S30"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "ALMCAP",
+      "case_id": "almere",
+      "dimension": "Capacity",
+      "classification": "Verified source statement",
+      "text": "NorthC lists 11 MW installed electrical capacity for this case.",
+      "source_ids": [
+        "S30"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Published electrical specification; not IT capacity, measured load, spare import capacity or a contract.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "NIE68",
+      "case_id": "nieuwegein",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S31"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "NIE69",
+      "case_id": "nieuwegein",
+      "dimension": "On-site options",
+      "classification": "Unknown",
+      "text": "No usable site-specific generation/storage operating envelope established in the reviewed disclosures.",
+      "source_ids": [
+        "S31"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "NIE70",
+      "case_id": "nieuwegein",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No location-specific water-use volume or constraint established in the reviewed disclosures.",
+      "source_ids": [
+        "S31"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "NIECAP",
+      "case_id": "nieuwegein",
+      "dimension": "Capacity",
+      "classification": "Verified source statement",
+      "text": "NorthC lists 2.5 MW installed electrical capacity for this case.",
+      "source_ids": [
+        "S31"
+      ],
+      "confidence": "High for the cited statement; feasibility unverified",
+      "limitation": "Published electrical specification; not IT capacity, measured load, spare import capacity or a contract.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "EDE72",
+      "case_id": "ede",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No location-specific water-use volume or constraint established in the reviewed disclosures.",
+      "source_ids": [
+        "S32",
+        "S33"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "HEN73",
+      "case_id": "hengelo",
+      "dimension": "Flexibility potential",
+      "classification": "Unknown",
+      "text": "No site-specific shiftable workload or curtailment commitment established in the reviewed disclosures.",
+      "source_ids": [
+        "S34"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "HEN74",
+      "case_id": "hengelo",
+      "dimension": "Water and local context",
+      "classification": "Unknown",
+      "text": "No location-specific water-use volume or constraint established in the reviewed disclosures.",
+      "source_ids": [
+        "S34"
+      ],
+      "confidence": "Not established",
+      "limitation": "Not established does not mean absent. Obtain site documentation before comparison.",
+      "access_date": "2026-10-15"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G01",
+      "cases": "All",
+      "topic": "Grid connection",
+      "missing": "Serving node, voltage, contracted import/export, firm/non-firm terms and any offer dates",
+      "verify_with": "Grid operator and operator connection agreement",
+      "decision_impact": "Blocks conclusions on connection availability or time to power",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G02",
+      "cases": "All",
+      "topic": "Workloads",
+      "missing": "Hourly baseline, controllable MW, notice, maximum duration and recovery / rebound profile",
+      "verify_with": "Operator workload and service-level owners",
+      "decision_impact": "Blocks quantified load shifting and reliability comparison",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G03",
+      "cases": "NorthC",
+      "topic": "Emergency assets",
+      "missing": "Current power rating, usable fuel inventory, duration, maintenance and reserved emergency margin",
+      "verify_with": "Operator facilities team; supplier; permitting authority",
+      "decision_impact": "Blocks dispatchable-generation assumptions",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G04",
+      "cases": "Winschoten",
+      "topic": "Solar / storage",
+      "missing": "Hourly solar profile, installed rating, battery power/energy if any, charge strategy and reserve limits",
+      "verify_with": "Operator metering and asset documentation",
+      "decision_impact": "Blocks storage sizing and solar availability claims",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G05",
+      "cases": "Eemshaven",
+      "topic": "Water",
+      "missing": "Actual source mix, withdrawal/consumption, drought restrictions and cooling envelope",
+      "verify_with": "Operator; water supplier; relevant water authority",
+      "decision_impact": "Blocks water-risk ranking and energy-water trade-off calculation",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G06",
+      "cases": "NorthC / Winschoten",
+      "topic": "Water",
+      "missing": "Site water volumes, cooling design under peak weather, permit conditions",
+      "verify_with": "Operator and permit documents",
+      "decision_impact": "Blocks claims that water risk is absent",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G07",
+      "cases": "All",
+      "topic": "Economics",
+      "missing": "Comparable firm/flexible offers, capex, opex, fuel, tariffs, revenues and delay counterfactual",
+      "verify_with": "Operator finance; grid offer; equipment quotes",
+      "decision_impact": "Blocks NPV, savings and investment recommendations",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G08",
+      "cases": "All",
+      "topic": "System benefit",
+      "missing": "Congestion hour and location, counterfactual dispatch, recharge/rebound impacts and emissions",
+      "verify_with": "Grid study plus operator profiles",
+      "decision_impact": "Blocks any conclusion that a case is grid-positive",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G09",
+      "cases": "Eemshaven context",
+      "topic": "Identity / delivery",
+      "missing": "Confirm which operator the EOS380 cable notice concerns; approval and delivery schedule",
+      "verify_with": "Full municipal planning dossier",
+      "decision_impact": "Blocks assigning the cable to Google",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G10",
+      "cases": "Winschoten",
+      "topic": "Conflicting milestone",
+      "missing": "Reconcile December 2023 vs 2024 groundbreaking references",
+      "verify_with": "Owner clarification or original dated planning records",
+      "decision_impact": "Blocks derived build duration",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G11",
+      "cases": "All",
+      "topic": "Freshness",
+      "missing": "Refresh official node-specific studies, permits and operator disclosures before publication",
+      "verify_with": "Current source review",
+      "decision_impact": "This is a dated research snapshot, not a live connection tool",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G12",
+      "cases": "Westpoort",
+      "topic": "Project match / delivery",
+      "missing": "Confirm exact TenneT project, connection terms, current construction status and energisation milestones",
+      "verify_with": "Operator and TenneT project records",
+      "decision_impact": "Blocks a time-to-power comparison",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G13",
+      "cases": "Eemshaven",
+      "topic": "Cable status",
+      "missing": "Commissioning status of reported 220 kV cable and relationship, if any, to 380 kV proposal",
+      "verify_with": "Grid operator and official planning documents",
+      "decision_impact": "Blocks treating historical target dates as actual delivery",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G14",
+      "cases": "AMS11",
+      "topic": "Phase boundary / inconsistent status",
+      "missing": "Reconcile opening, complete-campus IT capacity and remaining phases",
+      "verify_with": "Dated owner commissioning and capacity records",
+      "decision_impact": "Blocks comparable delivery and capacity analysis",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    },
+    {
+      "id": "G15",
+      "cases": "National sample",
+      "topic": "Coverage and identity",
+      "missing": "Complete universe, consistent campus/building units, serving nodes and current permits",
+      "verify_with": "Systematic operator inventory and public planning registers",
+      "decision_impact": "Blocks national market share, aggregate capacity or opportunity ranking",
+      "status": "Open",
+      "access_date": "2026-10-15"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A01",
+      "text": "Selected locations illustrate different evidence types; selection does not establish that they are the most promising Dutch projects."
+    },
+    {
+      "id": "A02",
+      "text": "Scenario options are hypothetical counterfactuals for existing locations or a future expansion, not existing offers."
+    },
+    {
+      "id": "A03",
+      "text": "No actual financial, capacity, emissions or time-to-power outcomes are calculated."
+    },
+    {
+      "id": "A04",
+      "text": "Source-confirmed means the source makes the statement; owner statements are not independent engineering verification."
+    },
+    {
+      "id": "A05",
+      "text": "Unknown means not established in the reviewed source set, not absent in reality."
+    },
+    {
+      "id": "A06",
+      "text": "Editable scenario notes are user assumptions only and never alter the evidence record."
+    },
+    {
+      "id": "A07",
+      "text": "A zero event energy gap would not by itself establish net system benefit; rebound, recharge, fuel and location must also be tested."
+    },
+    {
+      "id": "A08",
+      "text": "National expansion uses purposive geographic and evidence-type coverage, not a census. Eight provinces are represented; missing provinces do not imply no data centres."
+    }
+  ]
+}
